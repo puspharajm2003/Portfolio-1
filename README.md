@@ -2,7 +2,9 @@
 
 <div align="center">
 
-![Portfolio Preview](https://via.placeholder.com/800x400/0ea5e9/ffffff?text=Robotics+%26+AI+Engineer+Portfolio)
+[Visit my Robotics & AI Engineer Portfolio](https://puspharajm2003.github.io/Portfolio-1/)
+
+
 
 **A modern, responsive portfolio showcasing expertise in Robotics, AI, and Full-Stack Development**
 

@@ -8,7 +8,7 @@
     <!-- SEO Meta Tags -->
     <meta name="author" content="Puspharaj M">
     <meta name="description" content="Professional portfolio and resume for Puspharaj M, a Robotics & AI Engineer and Full-Stack Developer. Explore projects in ROS, Generative AI, Node.js, and autonomous systems.">
-    <meta name="keywords" content="Puspharaj M, Robotics & AI Engineer, Full-Stack Developer, Automation Engineer, ROS, SLAM, Generative AI, Machine Learning, Python, C++, Node.js">
+    <meta name="keywords" content="Puspharaj M, Puspharaj M Resume, Robotics & AI Engineer, Full-Stack Developer, Automation Engineer, Portfolio, Resume, ROS, SLAM, Generative AI, Machine Learning, Python, C++, Node.js, Autonomous Systems, API Development">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Puspharaj M - Robotics & AI Engineer | Full-Stack Developer">
@@ -27,250 +27,41 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- html2pdf.js CDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" xintegrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- AOS Library for Scroll Animations -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
     <style>
-        :root {
-            --primary: #0ea5e9;
-            --primary-dark: #0284c7;
-            --secondary: #6366f1;
-            --dark: #0f172a;
-            --light: #f8fafc;
-        }
-        
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #334155;
-            overflow-x: hidden;
+            background-color: #f8fafc; /* bg-slate-50 */
         }
         
-        /* Mobile-First Responsive Design */
-        .container-responsive {
-            width: 100%;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
-        @media (min-width: 640px) {
-            .container-responsive {
-                max-width: 640px;
-                padding: 0 1.5rem;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .container-responsive {
-                max-width: 768px;
-                padding: 0 2rem;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .container-responsive {
-                max-width: 1024px;
-                padding: 0 2rem;
-            }
-        }
-        
-        @media (min-width: 1280px) {
-            .container-responsive {
-                max-width: 1280px;
-            }
-        }
-        
-        /* Dynamic Grid System */
-        .grid-responsive {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-columns: 1fr;
-        }
-        
-        @media (min-width: 768px) {
-            .grid-responsive {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .grid-responsive {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-        
-        /* Card Responsive Design */
-        .card-responsive {
-            background: white;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-            padding: 1.5rem;
-            transition: all 0.3s ease;
-        }
-        
-        @media (min-width: 768px) {
-            .card-responsive {
-                padding: 2rem;
-            }
-        }
-        
-        .card-responsive:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
-        
-        /* Typography Scaling */
-        .text-responsive-lg {
-            font-size: 1.5rem;
-            line-height: 2rem;
-        }
-        
-        @media (min-width: 768px) {
-            .text-responsive-lg {
-                font-size: 1.875rem;
-                line-height: 2.25rem;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .text-responsive-lg {
-                font-size: 2.25rem;
-                line-height: 2.5rem;
-            }
-        }
-        
-        .text-responsive-xl {
-            font-size: 1.875rem;
-            line-height: 2.25rem;
-        }
-        
-        @media (min-width: 768px) {
-            .text-responsive-xl {
-                font-size: 2.25rem;
-                line-height: 2.5rem;
-            }
-        }
-        
-        @media (min-width: 1024px) {
-            .text-responsive-xl {
-                font-size: 3rem;
-                line-height: 1;
-            }
-        }
-        
-        /* Navigation for Mobile */
-        .mobile-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: white;
-            box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
-            z-index: 50;
-            display: flex;
-            justify-content: space-around;
-            padding: 0.75rem 0;
-        }
-        
-        @media (min-width: 768px) {
-            .mobile-nav {
-                display: none;
-            }
-        }
-        
-        .nav-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            font-size: 0.75rem;
-            color: #64748b;
-        }
-        
-        .nav-item.active {
-            color: #0ea5e9;
-        }
-        
-        .nav-icon {
-            font-size: 1.25rem;
-            margin-bottom: 0.25rem;
-        }
-        
-        /* Loading Animation */
-        .loader {
-            border: 4px solid #e2e8f0;
-            border-top: 4px solid #0ea5e9;
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-        }
-        
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        
-        /* Typewriter Effect */
-        .typewriter {
-            overflow: hidden;
-            border-right: .15em solid #0ea5e9;
-            white-space: nowrap;
-            animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
-        }
-        
-        @keyframes typing {
-            from { width: 0 }
-            to { width: 100% }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #0ea5e9; }
-        }
-        
-        /* Timeline for Mobile */
-        .timeline-mobile {
+        /* Custom styles for the timeline */
+        .timeline-item {
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 2rem; /* 32px */
+            padding-bottom: 1.5rem; /* 24px */
+            border-left: 2px solid #e2e8f0; /* border-slate-200 */
         }
-        
-        .timeline-mobile::before {
-            content: '';
+        .timeline-item:last-child {
+            border-left: 2px solid transparent;
+            padding-bottom: 0;
+        }
+        .timeline-dot {
             position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #e2e8f0;
+            left: -0.5rem; /* -8px */
+            top: 0.25rem; /* 4px */
+            width: 1rem; /* 16px */
+            height: 1rem; /* 16px */
+            border-radius: 9999px; /* rounded-full */
+            background-color: #0ea5e9; /* bg-sky-500 */
+            border: 2px solid #f8fafc; /* border-slate-50 */
         }
-        
-        .timeline-item-mobile {
-            position: relative;
-            margin-bottom: 1.5rem;
-        }
-        
-        .timeline-item-mobile::before {
-            content: '';
-            position: absolute;
-            left: -1.5rem;
-            top: 0.25rem;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #0ea5e9;
-            border: 2px solid white;
-        }
-        
+
         /* Print-friendly styles */
         @media print {
             body {
@@ -317,189 +108,79 @@
             .print-break-inside-avoid {
                 page-break-inside: avoid;
             }
-            /* Hide typewriter cursor for print */
-            .blinking-cursor { display: none !important; }
-            #job-title-container { height: auto !important; }
-            #job-title { color: #334155 !important; } /* Match print subtitle color */
-        }
-        
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-        
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-        
-        ::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 4px;
-        }
-        
-        ::-webkit-scrollbar-thumb:hover {
-            background: #94a3b8;
-        }
-        
-        /* Timeline styles for desktop */
-        .timeline-item {
-            position: relative;
-            padding-left: 2rem;
-            padding-bottom: 1.5rem;
-            border-left: 2px solid #e2e8f0;
-        }
-        
-        .timeline-item:last-child {
-            border-left: 2px solid transparent;
-            padding-bottom: 0;
-        }
-        
-        .timeline-dot {
-            position: absolute;
-            left: -0.5rem;
-            top: 0.25rem;
-            width: 1rem;
-            height: 1rem;
-            border-radius: 9999px;
-            background-color: #0ea5e9;
-            border: 2px solid #f8fafc;
-        }
-        
-        /* Collapsible sections for mobile */
-        .collapsible {
-            cursor: pointer;
-            position: relative;
-        }
-        
-        .collapsible-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
-        
-        .collapsible.active + .collapsible-content {
-            max-height: 2000px; /* Large enough to contain content */
-        }
-        
-        .collapsible::after {
-            content: '\f078';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transition: transform 0.3s ease;
-        }
-        
-        .collapsible.active::after {
-            transform: rotate(180deg);
-        }
-        
-        @media (min-width: 768px) {
-            .collapsible::after {
-                display: none;
-            }
-            .collapsible-content {
-                max-height: none !important;
-            }
         }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-700">
-    <!-- Loading Screen -->
-    <div id="loading-screen" class="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white transition-opacity duration-500">
-        <div class="loader mb-4"></div>
-        <p class="text-slate-600">Loading Portfolio...</p>
-    </div>
 
-    <!-- Mobile Navigation -->
-    <nav class="mobile-nav print-hidden">
-        <a href="#about" class="nav-item">
-            <i class="fas fa-user nav-icon"></i>
-            <span>About</span>
-        </a>
-        <a href="#experience" class="nav-item">
-            <i class="fas fa-briefcase nav-icon"></i>
-            <span>Experience</span>
-        </a>
-        <a href="#skills" class="nav-item">
-            <i class="fas fa-code nav-icon"></i>
-            <span>Skills</span>
-        </a>
-        <a href="#projects" class="nav-item">
-            <i class="fas fa-project-diagram nav-icon"></i>
-            <span>Projects</span>
-        </a>
-        <a href="#contact" class="nav-item">
-            <i class="fas fa-envelope nav-icon"></i>
-            <span>Contact</span>
-        </a>
-    </nav>
+    <!-- Wrapper for PDF export -->
+    <div id="resume-content">
 
-    <!-- Main Content -->
-    <div class="container-responsive py-4 md:py-8">
-        <!-- Hero Section -->
-        <header class="card-responsive bg-gradient-to-br from-slate-800 to-slate-900 text-white mb-8 md:mb-12 print-bg-white print-text-black print-shadow-none print-break-inside-avoid" data-aos="fade-up">
-            <div class="flex flex-col md:flex-row items-center gap-6 md:gap-8">
-                <!-- Profile Image -->
-                <div class="flex-shrink-0" data-aos="fade-right" data-aos-delay="200">
+        <div class="container mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
+
+            <!-- === Hero Header Card === -->
+            <header class="bg-gradient-to-br from-slate-800 to-slate-900 text-white rounded-3xl shadow-2xl p-8 md:p-12 mb-12 print-bg-white print-text-black print-shadow-none print-break-inside-avoid">
+                <div class="flex flex-col md:flex-row md:items-center gap-8">
+                    <!-- Profile Picture -->
                     <img src="https://avatars.githubusercontent.com/u/138361238?s=400&u=3e850a455324880cea7df8407b476d08428dc433&v=4" 
                          alt="Puspharaj M" 
-                         class="w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-full border-4 border-slate-600 shadow-lg mx-auto md:mx-0"
+                         class="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto md:mx-0 border-4 border-slate-600 shadow-lg"
                          onerror="this.src='https://placehold.co/160x160/e2e8f0/334155?text=PM'">
-                </div>
-                
-                <!-- Profile Info -->
-                <div class="flex-1 text-center md:text-left" data-aos="fade-up" data-aos-delay="400">
-                    <h1 class="text-responsive-xl font-extrabold mb-2">Puspharaj M</h1>
-                    <div class="text-responsive-lg text-sky-300 font-medium mb-4 md:mb-6 print-text-slate-700">
-                        <span id="typewriter-text"></span>
-                        <span class="blinking-cursor">|</span>
-                    </div>
                     
-                    <!-- Social Links -->
-                    <div class="flex justify-center md:justify-start space-x-4 md:space-x-6">
-                        <a href="https://www.linkedin.com/in/puspharaj-m/" target="_blank" class="text-slate-300 hover:text-white print-text-slate-700 transition-colors duration-300">
-                            <i class="fab fa-linkedin text-xl"></i>
-                        </a>
-                        <a href="https://github.com/puspharajm2003" target="_blank" class="text-slate-300 hover:text-white print-text-slate-700 transition-colors duration-300">
-                            <i class="fab fa-github text-xl"></i>
-                        </a>
-                        <a href="https://puspharajm2003.github.io/portfolio/" target="_blank" class="text-slate-300 hover:text-white print-text-slate-700 transition-colors duration-300">
-                            <i class="fas fa-globe text-xl"></i>
-                        </a>
+                    <!-- Profile Info -->
+                    <div class="flex-1 text-center md:text-left">
+                        <h1 class="text-4xl lg:text-5xl font-extrabold">Puspharaj M</h1>
+                        <h2 class="text-2xl text-sky-300 font-medium mt-2 print-text-slate-700">Robotics & AI Engineer | Full-Stack Developer</h2>
+                        
+                        <!-- Key Links -->
+                        <div class="flex justify-center md:justify-start gap-4 mt-6">
+                            <a href="https://www.linkedin.com/in/puspharaj-m/" target="_blank" rel="noopener noreferrer" class="flex items-center group gap-2 text-slate-300 hover:text-white print-text-slate-700">
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                                <span class="text-sm font-medium">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/puspharajm2003" target="_blank" rel="noopener noreferrer" class="flex items-center group gap-2 text-slate-300 hover:text-white print-text-slate-700">
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.109-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                <span class="text-sm font-medium">GitHub</span>
+                            </a>
+                            <a href="https://puspharajm2003.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="flex items-center group gap-2 text-slate-300 hover:text-white print-text-slate-700">
+                                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                                </svg>
+                                <span class="text-sm font-medium">Portfolio</span>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                
-                <!-- Download Button -->
-                <div class="md:ml-auto md:flex-shrink-0 pt-4 md:pt-0" data-aos="fade-left" data-aos-delay="600">
-                    <button onclick="downloadPDF(this)" class="w-full md:w-auto bg-sky-500 hover:bg-sky-600 text-white font-medium py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5 flex items-center justify-center gap-2 print-hidden">
-                        <i class="fas fa-download"></i>
-                        Download as PDF
-                    </button>
-                </div>
-            </div>
-        </header>
 
-        <!-- Main Grid Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
-            <!-- Left Column - Main Content -->
-            <div class="lg:col-span-2 space-y-6 md:space-y-8 print-w-full print-block">
-                
-                <!-- About Section -->
-                <section id="about" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-up">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4 md:mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-user mr-2 text-sky-500"></i>About Me
-                    </h2>
-                    <p class="text-slate-700 leading-relaxed mb-6">
-                        Dynamic Robotics and Automation Engineer with a proven track record in professional engineering roles and a diverse skill set spanning full-stack development, artificial intelligence, and creative design. A graduate from Sri Ramakrishna Engineering College, my foundation in robotics (ROS, SLAM, AI/ML) is now complemented by practical experience in full-stack web technologies (Node.js), generative AI, and graphic design. I am a proactive problem-solver and a lifelong learner, adept at integrating complex systems and developing innovative solutions, from autonomous robots to freelance web applications.
-                    </p>
+                    <!-- Download Button -->
+                    <div class="md:ml-auto md:flex-shrink-0 pt-4 md:pt-0">
+                        <button onclick="downloadPDF(this)" class="w-full md:w-auto bg-sky-500 hover:bg-sky-600 text-white font-medium py-3 px-6 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5 flex items-center justify-center gap-2 print-hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                            </svg>
+                            Download as PDF
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- === Main Content Grid === -->
+            <div class="lg:grid lg:grid-cols-3 lg:gap-8">
+
+                <!-- === Main Column (Left) === -->
+                <div class="lg:col-span-2 space-y-8 print-w-full print-block">
                     
-                    <!-- Education -->
-                    <h3 class="text-xl font-semibold text-slate-700 mb-4">
-                        <i class="fas fa-graduation-cap mr-2 text-sky-500"></i>Education
-                    </h3>
-                    <div class="hidden md:block">
+                    <!-- About Me Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">About Me</h3>
+                        <p class="text-slate-700 leading-relaxed mb-6">
+                            Dynamic Robotics and Automation Engineer with a proven track record in professional engineering roles and a diverse skill set spanning full-stack development, artificial intelligence, and creative design. A graduate from Sri Ramakrishna Engineering College, my foundation in robotics (ROS, SLAM, AI/ML) is now complemented by practical experience in full-stack web technologies (Node.js), generative AI, and graphic design. I am a proactive problem-solver and a lifelong learner, adept at integrating complex systems and developing innovative solutions, from autonomous robots to freelance web applications.
+                        </p>
+                        <!-- Education added to About Me -->
+                        <h4 class="text-xl font-semibold text-slate-700 mb-6">Education</h4>
                         <div class="space-y-0">
                             <!-- Education 1 -->
                             <div class="timeline-item">
@@ -520,34 +201,14 @@
                                 <p class="text-md text-gray-700">Achariya Siksha Mandir</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="md:hidden timeline-mobile">
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">B.E. Robotics & Automation</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">September 2020 - May 2024</span>
-                            </div>
-                            <p class="text-md text-gray-700">Sri Ramakrishna Engineering College</p>
-                        </div>
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Higher Secondary School</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">June 2019 - April 2020</span>
-                            </div>
-                            <p class="text-md text-gray-700">Achariya Siksha Mandir</p>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Experience Section -->
-                <section id="experience" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-up">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-briefcase mr-2 text-sky-500"></i>Work Experience
-                    </h2>
-                    
-                    <!-- Professional Experience -->
-                    <h3 class="text-xl font-semibold text-slate-600 mb-4">Professional Experience</h3>
-                    <div class="hidden md:block mb-8">
+                    <!-- Work Experience Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-8 border-b-2 border-slate-100 pb-3 print-border-transparent">Work Experience</h3>
+                        
+                        <!-- Professional Experience -->
+                        <h4 class="text-xl font-semibold text-slate-600 mb-6">Professional Experience</h4>
                         <div class="mb-8">
                             <!-- Job 1 -->
                             <div class="timeline-item">
@@ -582,39 +243,9 @@
                                 </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="md:hidden timeline-mobile mb-8">
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Robotics Engineer and Developer (Full-time)</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Nov 2025 - Present</span>
-                            </div>
-                            <p class="text-md text-gray-700">P2J industries</p>
-                        </div>
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Robotics Engineer</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Apr 2025 - Aug 2025</span>
-                            </div>
-                            <p class="text-md text-gray-700">VTS</p>
-                        </div>
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Freelancer</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Ongoing</span>
-                            </div>
-                            <p class="text-md text-gray-700 mb-2">Self-Employed</p>
-                            <ul class="list-disc list-inside text-gray-700 ml-4 space-y-1">
-                                <li>Graphic Designer</li>
-                                <li>Full Stack Developer</li>
-                                <li>Gen AI Developer</li>
-                            </ul>
-                        </div>
-                    </div>
 
-                    <!-- Internships -->
-                    <h3 class="text-xl font-semibold text-slate-600 mb-4">Internships</h3>
-                    <div class="hidden md:block">
+                        <!-- Internships -->
+                        <h4 class="text-xl font-semibold text-slate-600 mb-6">Internships</h4>
                         <div>
                             <!-- Internship 1 -->
                             <div class="timeline-item">
@@ -653,129 +284,102 @@
                                 <p class="text-md text-gray-700">Skill vertex</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="md:hidden timeline-mobile">
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">ROBO AI (Internship)</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">July 2024 - Aug 2024</span>
-                            </div>
-                            <p class="text-md text-gray-700">My Equation</p>
-                        </div>
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Python with Machine Learning (Internship)</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Jan 2024 - Mar 2024</span>
-                            </div>
-                            <p class="text-md text-gray-700">Gateway Software Solution</p>
-                        </div>
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">CNC Machine (Internship)</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Oct 2023 - Oct 2023</span>
-                            </div>
-                            <p class="text-md text-gray-700">Chennai Institute of Technology College</p>
-                        </div>
-                        <div class="timeline-item-mobile">
-                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Artificial Intelligence (Internship)</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">May 2023 - Aug 2023</span>
-                            </div>
-                            <p class="text-md text-gray-700">Skill vertex</p>
-                        </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Courses & Certifications Section -->
-                <section id="courses" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-up">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-certificate mr-2 text-sky-500"></i>Courses & Certifications
-                    </h2>
-                    
-                    <!-- Certifications & Badges -->
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-slate-600 mb-3">Certifications & Badges</h3>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <!-- Node.js -->
-                            <li>
-                                <span class="font-semibold">Node.js</span> - The Linux Foundation
-                                <a href="https://www.credly.com/badges/d299bd51-cbe6-4b38-a2ed-856a01df5e49/linked_in_profile" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                    (Verify <i class="fas fa-external-link-alt ml-1 text-xs"></i>)
-                                </a>
-                            </li>
-                            <!-- HackingFlix -->
-                            <li>
-                                <span class="font-semibold">HOW TO BECOME HIGHLY PAID HACKER</span> - HackingFlix
-                                <a href="https://hackingflix.verified.cv/en/verify/44451635889432" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                    (Verify <i class="fas fa-external-link-alt ml-1 text-xs"></i>)
-                                </a>
-                            </li>
-                            <!-- Postman -->
-                            <li>
-                                <span class="font-semibold">Postman API Fundamentals</span> - Postman
-                                <a href="https://badges.parchment.com/public/assertions/NdqjtE54QxKoh-Yn8en1Xw" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                    (Verify <i class="fas fa-external-link-alt ml-1 text-xs"></i>)
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- LetsUpgrade -->
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-slate-600 mb-3">LetsUpgrade</h3>
-                        <ul class="list-disc list-inside space-y-2 text-gray-700">
-                            <li>
-                                <span class="font-semibold">NoCode Apps with Appsheet Bootcamp</span>
-                                <a href="https://verify.letsupgrade.in/certificate/LUEAPSAPR124376" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                    (Verify <i class="fas fa-external-link-alt ml-1 text-xs"></i>)
-                                </a>
-                            </li>
-                            <li>
-                                <span class="font-semibold">Python Libraries Zero to Hero</span>
-                                <a href="https://verify.letsupgrade.in/certificate/LUEPYTLFEB1241415" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                    (Verify <i class="fas fa-external-link-alt ml-1 text-xs"></i>)
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- Courses & Certifications Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-8 border-b-2 border-slate-100 pb-3 print-border-transparent">Courses & Certifications</h3>
+                        
+                        <!-- Helper SVG for external links -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+                            <symbol id="icon-external-link" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-4.5 0V6A2.25 2.25 0 0115.75 3.75h.75M13.5 6H18v4.5" />
+                            </symbol>
+                        </svg>
 
-                    <!-- Microsoft Learn -->
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-slate-600 mb-3">Microsoft Learn</h3>
-                        <p class="text-gray-700 mb-2">
-                            <a href="https://learn.microsoft.com/en-gb/users/puspharajm-3331/" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                View Full Profile <i class="fas fa-external-link-alt ml-1 text-xs"></i>
-                            </a>
-                        </p>
-                        <ul class="list-disc list-inside space-y-1 text-gray-700">
-                            <li>Introduction to GitHub, Git, and GitHub Copilot</li>
-                            <li>Introduction to AI and machine learning concepts</li>
-                            <li>Plan and deploy Microsoft Teams</li>
-                            <li>Explore Microsoft Teams</li>
-                        </ul>
-                    </div>
+                        <!-- Certifications & Badges -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">Certifications & Badges</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <!-- Node.js -->
+                                <li>
+                                    <span class="font-semibold">Node.js</span> - The Linux Foundation
+                                    <a href="https://www.credly.com/badges/d299bd51-cbe6-4b38-a2ed-856a01df5e49/linked_in_profile" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                        (Verify <svg class="w-4 h-4 ml-0.5"><use xlink:href="#icon-external-link"></use></svg>)
+                                    </a>
+                                </li>
+                                <!-- HackingFlix -->
+                                <li>
+                                    <span class="font-semibold">HOW TO BECOME HIGHLY PAID HACKER</span> - HackingFlix
+                                    <a href="https://hackingflix.verified.cv/en/verify/44451635889432" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                        (Verify <svg class="w-4 h-4 ml-0.5"><use xlink:href="#icon-external-link"></use></svg>)
+                                    </a>
+                                </li>
+                                <!-- Postman -->
+                                <li>
+                                    <span class="font-semibold">Postman API Fundamentals</span> - Postman
+                                    <a href="https://badges.parchment.com/public/assertions/NdqjtE54QxKoh-Yn8en1Xw" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                        (Verify <svg class="w-4 h-4 ml-0.5"><use xlink:href="#icon-external-link"></use></svg>)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- LetsUpgrade -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">LetsUpgrade</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                <li>
+                                    <span class="font-semibold">NoCode Apps with Appsheet Bootcamp</span>
+                                    <a href="https://verify.letsupgrade.in/certificate/LUEAPSAPR124376" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                        (Verify <svg class="w-4 h-4 ml-0.5"><use xlink:href="#icon-external-link"></use></svg>)
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="font-semibold">Python Libraries Zero to Hero</span>
+                                    <a href="https://verify.letsupgrade.in/certificate/LUEPYTLFEB1241415" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                        (Verify <svg class="w-4 h-4 ml-0.5"><use xlink:href="#icon-external-link"></use></svg>)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-                    <!-- Google Skillshop -->
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-slate-600 mb-3">Google Skillshop</h3>
-                        <p class="text-gray-700 mb-2">
-                            <a href="https://www.skills.google/public_profiles/dc8c542f-ce93-405d-8efd-e02fefdf56c5" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                View Full Profile <i class="fas fa-external-link-alt ml-1 text-xs"></i>
-                            </a>
-                        </p>
-                        <ul class="list-disc list-inside space-y-1 text-gray-700">
-                            <li>Introduction to Generative AI & Generative AI Explorer - Vertex AI</li>
-                            <li>Create Engaging Video with Google Vids</li>
-                            <li>Generative AI for Healthcare</li>
-                            <li>Gemini in Google Drive, Meet, Sheets, Slides, Docs, & Gmail</li>
-                            <li>Introduction to Google Workspace with Gemini</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Additional Courses -->
-                    <div class="mb-6">
-                        <h3 class="text-lg font-semibold text-slate-600 mb-3">Additional Courses</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                        <!-- Microsoft Learn -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">Microsoft Learn</h4>
+                            <p class="text-gray-700 mb-2">
+                                <a href="https://learn.microsoft.com/en-gb/users/puspharajm-3331/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                    View Full Profile <svg class="w-4 h-4 ml-1"><use xlink:href="#icon-external-link"></use></svg>
+                                </a>
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Introduction to GitHub, Git, and GitHub Copilot</li>
+                                <li>Introduction to AI and machine learning concepts</li>
+                                <li>Plan and deploy Microsoft Teams</li>
+                                <li>Explore Microsoft Teams</li>
+                            </ul>
+                        </div>
+
+                        <!-- Google Skillshop -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">Google Skillshop</h4>
+                            <p class="text-gray-700 mb-2">
+                                <a href="https://www.skills.google/public_profiles/dc8c542f-ce93-405d-8efd-e02fefdf56c5" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                    View Full Profile <svg class="w-4 h-4 ml-1"><use xlink:href="#icon-external-link"></use></svg>
+                                </a>
+                            </p>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>Introduction to Generative AI & Generative AI Explorer - Vertex AI</li>
+                                <li>Create Engaging Video with Google Vids</li>
+                                <li>Generative AI for Healthcare</li>
+                                <li>Gemini in Google Drive, Meet, Sheets, Slides, Docs, & Gmail</li>
+                                <li>Introduction to Google Workspace with Gemini</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Additional Courses -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">Additional Courses</h4>
                             <ul class="list-disc list-inside space-y-1 text-gray-700">
                                 <li><span class="font-semibold">Full stack Developer</span> - pantech.ai</li>
                                 <li><span class="font-semibold">Robotics and AI</span> - My Equation</li>
@@ -786,8 +390,6 @@
                                 <li><span class="font-semibold">Cambridge Assessment English</span> - Cambridge University</li>
                                 <li><span class="font-semibold">ROS: Basic & Modelling</span> - RigBetel Labs</li>
                                 <li><span class="font-semibold">ROS Tools and SLAM</span> - RigBetel Labs</li>
-                            </ul>
-                            <ul class="list-disc list-inside space-y-1 text-gray-700">
                                 <li><span class="font-semibold">Node.js Bootcamp</span> - LetsUpgrade</li>
                                 <li><span class="font-semibold">Canva Bootcamp</span> - LetsUpgrade</li>
                                 <li><span class="font-semibold">Instagram Clone using Figma</span> - LetsUpgrade</li>
@@ -800,353 +402,229 @@
                                 <li><span class="font-semibold">Excel Bootcamp</span> - LetsUpgrade</li>
                             </ul>
                         </div>
-                    </div>
 
-                    <!-- Developer Programs -->
-                    <div>
-                        <h3 class="text-lg font-semibold text-slate-600 mb-3">Developer Programs</h3>
-                        <ul class="list-disc list-inside space-y-1 text-gray-700">
-                            <li>
-                                <span class="font-semibold">Google</span>
-                                <a href="https://g.dev/Puspharaj" target="_blank" class="text-sky-600 hover:underline font-medium inline-flex items-center">
-                                    (g.dev/Puspharaj <i class="fas fa-external-link-alt ml-1 text-xs"></i>)
-                                </a>
-                            </li>
+                        <!-- Developer Programs -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">Developer Programs</h4>
+                            <ul class="list-disc list-inside space-y-1 text-gray-700">
+                                <li>
+                                    <span class="font-semibold">Google</span>
+                                    <a href="https://g.dev/Puspharaj" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center">
+                                        (g.dev/Puspharaj <svg class="w-4 h-4 ml-0.5"><use xlink:href="#icon-external-link"></use></svg>)
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Workshops Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Workshops</h3>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Exploring ROS: Basic and Modelling</li>
+                            <li>ROS Tools, Mapping & Navigation</li>
+                            <li>Industrial Electrical Panel Design</li>
+                            <li>Robotic Simulation using Moto Sim Software</li>
+                            <li>CNC Machine</li>
+                            <li>Internet of Things with Robotics</li>
                         </ul>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Workshops Section -->
-                <section id="workshops" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-up">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-tools mr-2 text-sky-500"></i>Workshops
-                    </h2>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700">
-                        <li>Exploring ROS: Basic and Modelling</li>
-                        <li>ROS Tools, Mapping & Navigation</li>
-                        <li>Industrial Electrical Panel Design</li>
-                        <li>Robotic Simulation using Moto Sim Software</li>
-                        <li>CNC Machine</li>
-                        <li>Internet of Things with Robotics</li>
-                    </ul>
-                </section>
-
-                <!-- Volunteering Section -->
-                <section id="volunteering" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-up">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-hands-helping mr-2 text-sky-500"></i>Volunteering
-                    </h2>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Robotics Workshop Facilitator</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Sep 2021 - May 2023</span>
+                    <!-- Volunteering Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Volunteering</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+                                    <h4 class="text-lg font-semibold text-sky-700">Robotics Workshop Facilitator</h4>
+                                    <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Sep 2021 - May 2023</span>
+                                </div>
+                                <p class="text-md text-gray-700">Robotics Club, Sri Ramakrishna Engineering College</p>
                             </div>
-                            <p class="text-md text-gray-700">Robotics Club, Sri Ramakrishna Engineering College</p>
-                        </div>
-                        <div>
-                            <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
-                                <h4 class="text-lg font-semibold text-sky-700">Student Ambassador Program</h4>
-                                <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Ongoing</span>
+                            <div>
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-baseline">
+                                    <h4 class="text-lg font-semibold text-sky-700">Student Ambassador Program</h4>
+                                    <span class="text-sm text-gray-500 font-medium mt-1 sm:mt-0">Ongoing</span>
+                                </div>
+                                <p class="text-md text-gray-700">LetsUpgrade</p>
                             </div>
-                            <p class="text-md text-gray-700">LetsUpgrade</p>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <!-- Hobbies Section -->
-                <section id="hobbies" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-up">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-heart mr-2 text-sky-500"></i>Hobbies
-                    </h2>
-                    <p class="text-gray-700 leading-relaxed">
-                        My passion for technology extends beyond the workplace. I am a dedicated lifelong learner, constantly reading to stay at the forefront of trends in robotics and artificial intelligence. My personal interests directly fuel my professional skills: strategic gaming sharpens my complex problem-solving abilities, while photography and drawing cultivate a keen eye for detail and design. Pursuits like traveling and bike riding provide a dynamic balance, fostering adaptability and a fresh perspective on exploring new environments.
-                    </p>
-                </section>
+                    <!-- Hobbies Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 sm:p-10 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Hobbies</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            My passion for technology extends beyond the workplace. I am a dedicated lifelong learner, constantly reading to stay at the forefront of trends in robotics and artificial intelligence. My personal interests directly fuel my professional skills: strategic gaming sharpens my complex problem-solving abilities, while photography and drawing cultivate a keen eye for detail and design. Pursuits like traveling and bike riding provide a dynamic balance, fostering adaptability and a fresh perspective on exploring new environments.
+                        </p>
+                    </section>
+                </div>
 
-                <!-- Projects Section -->
-                <section id="projects" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-up">
-                    <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-project-diagram mr-2 text-sky-500"></i>Projects
-                    </h2>
+                <!-- === Sidebar Column (Right) === -->
+                <div class="lg:col-span-1 space-y-8 lg:sticky lg:top-8 print-w-full print-block print-sticky-static print-mt-0">
                     
-                    <div class="grid-responsive">
-                        <!-- Robotics Projects -->
-                        <div class="card-responsive bg-slate-50">
-                            <h3 class="text-lg font-semibold text-slate-700 mb-3">Robotics Projects</h3>
-                            <ul class="space-y-2">
-                                <li>
-                                    <a href="https://puspharajm2003.github.io/PS-Bot/" target="_blank" class="text-sky-600 hover:text-sky-700 font-medium flex items-center">
-                                        <span>PS Bot</span>
-                                        <i class="fas fa-external-link-alt ml-2 text-xs"></i>
-                                    </a>
-                                    <p class="text-sm text-slate-600 mt-1">Autonomous Robotics Platform with ESP32 & AI Integration</p>
-                                </li>
-                            </ul>
+                    <!-- Contact Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Contact</h3>
+                        <div class="space-y-4">
+                            <a href="mailto:puspharaj.m2003@gmail.com" class="flex items-center group">
+                                <svg class="w-6 h-6 mr-3 text-slate-400 group-hover:text-sky-600 print-text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                                <span class="font-medium text-slate-600 group-hover:text-sky-600">puspharaj.m2003@gmail.com</span>
+                            </a>
+                            <a href="tel:+6369278905" class="flex items-center group">
+                                <svg class="w-6 h-6 mr-3 text-slate-400 group-hover:text-sky-600 print-text-slate-700" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.211-.998-.552-1.348l-5.116-4.401a1.125 1.125 0 00-1.569 0L10.5 13.5m0 0l-2.25-2.25m2.25 2.25c.53 0 1.02-.18 1.41-.48l5.116-4.4c.34-.29.55-.73.55-1.18v-1.37a2.25 2.25 0 00-2.25-2.25H15m0 0H2.25m12.75 0a2.25 2.25 0 012.25 2.25v.243c0 .55-.22 1.05-.59 1.42l-5.116 4.4a1.125 1.125 0 01-1.57 0L3.34 8.42A2.25 2.25 0 012.75 7.5V6.75a2.25 2.25 0 012.25-2.25h12.75z" />
+                                </svg>
+                                <span class="font-medium text-slate-600 group-hover:text-sky-600">6369278905</span>
+                            </a>
+                            <a href="https://www.instagram.com/mr.puspharaj/" target="_blank" rel="noopener noreferrer" class="flex items-center group">
+                                <svg class="w-6 h-6 mr-3 text-slate-400 group-hover:text-sky-600 print-text-slate-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.148 3.227-1.667 4.771-4.919 4.919-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.646-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.667-4.771 4.919-4.919 1.266.058 1.646.07 4.85.07zm0-2.163c-3.273 0-3.66.014-4.944.072-4.308.196-6.101 1.99-6.298 6.298-.058 1.284-.072 1.67-.072 4.944s.014 3.66.072 4.944c.196 4.308 1.99 6.101 6.298 6.298 1.284.058 1.67.072 4.944.072s3.66-.014 4.944-.072c4.308-.196 6.101-1.99 6.298-6.298.058-1.284.072-1.67.072-4.944s-.014-3.66-.072-4.944c-.196-4.308-1.99-6.101-6.298-6.298-1.284-.058-1.67-.072-4.944-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"/>
+                                </svg>
+                                <span class="font-medium text-slate-600 group-hover:text-sky-600">Instagram</span>
+                            </a>
                         </div>
+                    </section>
+                    
+                    <!-- Skills Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Skills</h3>
+                        <!-- Technical Skills -->
+                        <div class="mb-6">
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">Technical Skills</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Artificial Intelligence</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Machine Learning</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Generative AI</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Python</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">C++</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Full Stack Development</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Node.js</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Git & GitHub</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Postman API</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">ROS</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">SLAM</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Embedded System</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Arduino</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">MATLAB</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">CAD Modelling</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Ethical Hacking</span>
+                                <span class="bg-sky-50 text-sky-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-sky-200">Digital & Social Media Marketing</span>
+                            </div>
+                        </div>
+                        <!-- Soft Skills -->
+                        <div>
+                            <h4 class="text-lg font-semibold text-slate-600 mb-3">Soft Skills</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Problem Solving</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Teamwork</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Adaptability</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Attention to Detail</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Communication</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Work Ethic</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Leadership</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Time Management</span>
+                                <span class="bg-blue-50 text-blue-700 text-sm font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-blue-200">Creativity</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Education Card -->
+                    <!-- This section is now removed, as requested -->
+
+                    <!-- Languages Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Languages</h3>
+                        <ul class="list-disc list-inside space-y-2 text-slate-700">
+                            <li><span class="font-medium">Tamil</span> (Native)</li>
+                            <li><span class="font-medium">English</span> (Professional)</li>
+                        </ul>
+                    </section>
+
+                    <!-- Interests Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Interests</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Robotics & AI</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Autonomous Systems (ROS & SLAM)</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Generative AI</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Machine Learning</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Full Stack Development</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Node.js</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">API Development (Postman)</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Embedded Systems & IoT</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">Cybersecurity & Ethical Hacking</span>
+                            <span class="bg-slate-100 text-slate-700 text-xs font-medium px-3 py-1 rounded-full ring-1 ring-inset ring-slate-200">CAD & 3D Modeling</span>
+                        </div>
+                    </section>
+
+                    <!-- Projects Card -->
+                    <section class="bg-white rounded-2xl shadow-xl p-8 print-shadow-none print-p-0 print-break-inside-avoid print-mb-6">
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 border-b-2 border-slate-100 pb-3 print-border-transparent">Projects</h3>
                         
-                        <!-- Web Development Projects -->
-                        <div class="card-responsive bg-slate-50">
-                            <h3 class="text-lg font-semibold text-slate-700 mb-3">Web Development Projects</h3>
-                            <ul class="space-y-2">
-                                <li>
-                                    <a href="https://puspharajm2003.github.io/smrgroups/" target="_blank" class="text-sky-600 hover:text-sky-700 font-medium flex items-center">
-                                        <span>SMR Groups</span>
-                                        <i class="fas fa-external-link-alt ml-2 text-xs"></i>
-                                    </a>
-                                    <p class="text-sm text-slate-600 mt-1">Dynamic Business Platform with advanced parallax UI</p>
-                                </li>
-                                <li>
-                                    <a href="https://puspharajm2003.github.io/shadowdrones/" target="_blank" class="text-sky-600 hover:text-sky-700 font-medium flex items-center">
-                                        <span>Shadow Drones</span>
-                                        <i class="fas fa-external-link-alt ml-2 text-xs"></i>
-                                    </a>
-                                    <p class="text-sm text-slate-600 mt-1">Drone control simulation with real-time responsiveness</p>
-                                </li>
-                                <li>
-                                    <a href="https://puspharajm2003.github.io/portfolio/" target="_blank" class="text-sky-600 hover:text-sky-700 font-medium flex items-center">
-                                        <span>Portfolio</span>
-                                        <i class="fas fa-external-link-alt ml-2 text-xs"></i>
-                                    </a>
-                                    <p class="text-sm text-slate-600 mt-1">Professional portfolio website</p>
-                                </li>
-                            </ul>
+                        <div class="space-y-6">
+                            <!-- Robotics Projects -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-slate-600 mb-3">Project on Robotics</h4>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                    <li>
+                                        <a href="https://puspharajm2003.github.io/PS-Bot/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center group">
+                                            <span>PS Bot</span>
+                                            <!-- Using the external link icon defined elsewhere on the page -->
+                                            <svg class="w-4 h-4 ml-1 opacity-75 group-hover:opacity-100 transition-opacity"><use xlink:href="#icon-external-link"></use></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- Web Developer Projects -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-slate-600 mb-3">Project on Web developer</h4>
+                                <ul class="list-disc list-inside space-y-2 text-gray-700">
+                                    <li>
+                                        <a href="https://puspharajm2003.github.io/smrgroups/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center group">
+                                            <span>SMR Groups</span>
+                                            <svg class="w-4 h-4 ml-1 opacity-75 group-hover:opacity-100 transition-opacity"><use xlink:href="#icon-external-link"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://puspharajm2003.github.io/shadowdrones/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center group">
+                                            <span>Shadow Drones</span>
+                                            <svg class="w-4 h-4 ml-1 opacity-75 group-hover:opacity-100 transition-opacity"><use xlink:href="#icon-external-link"></use></svg>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://puspharajm2003.github.io/portfolio/" target="_blank" rel="noopener noreferrer" class="text-sky-600 hover:underline font-medium inline-flex items-center group">
+                                            <span>Portfolio</span>
+                                            <svg class="w-4 h-4 ml-1 opacity-75 group-hover:opacity-100 transition-opacity"><use xlink:href="#icon-external-link"></use></svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </section>
-            </div>
+                    </section>
 
-            <!-- Right Column - Sidebar -->
-            <div class="space-y-6 md:space-y-8 lg:sticky lg:top-8 print-w-full print-block print-sticky-static print-mt-0">
-                
-                <!-- Contact Section -->
-                <section id="contact" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-left">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-envelope mr-2 text-sky-500"></i>Contact
-                    </h2>
-                    <div class="space-y-4">
-                        <a href="mailto:puspharaj.m2003@gmail.com" class="flex items-center text-slate-700 hover:text-sky-600 print-text-slate-700 transition-colors duration-300">
-                            <i class="fas fa-envelope w-5 h-5 mr-3 text-slate-500"></i>
-                            <span class="font-medium">puspharaj.m2003@gmail.com</span>
-                        </a>
-                        <a href="tel:+6369278905" class="flex items-center text-slate-700 hover:text-sky-600 print-text-slate-700 transition-colors duration-300">
-                            <i class="fas fa-phone w-5 h-5 mr-3 text-slate-500"></i>
-                            <span class="font-medium">6369278905</span>
-                        </a>
-                        <a href="https://www.instagram.com/mr.puspharaj/" target="_blank" class="flex items-center text-slate-700 hover:text-sky-600 print-text-slate-700 transition-colors duration-300">
-                            <i class="fab fa-instagram w-5 h-5 mr-3 text-slate-500"></i>
-                            <span class="font-medium">Instagram</span>
-                        </a>
-                    </div>
-                </section>
-                
-                <!-- Skills Section -->
-                <section id="skills" class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-left" data-aos-delay="100">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-code mr-2 text-sky-500"></i>Skills
-                    </h2>
-                    
-                    <!-- Technical Skills -->
-                    <h3 class="text-lg font-semibold text-slate-600 mb-3">Technical Skills</h3>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Artificial Intelligence</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Machine Learning</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Generative AI</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Python</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">C++</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Full Stack Development</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Node.js</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Git & GitHub</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Postman API</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">ROS</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">SLAM</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Embedded System</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Arduino</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">MATLAB</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">CAD Modelling</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Ethical Hacking</span>
-                        <span class="bg-sky-50 text-sky-700 text-sm font-medium px-2 py-1 rounded">Digital & Social Media Marketing</span>
-                    </div>
-                    
-                    <!-- Soft Skills -->
-                    <h3 class="text-lg font-semibold text-slate-600 mb-3">Soft Skills</h3>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Problem Solving</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Teamwork</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Adaptability</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Attention to Detail</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Communication</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Work Ethic</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Leadership</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Time Management</span>
-                        <span class="bg-blue-50 text-blue-700 text-sm font-medium px-2 py-1 rounded">Creativity</span>
-                    </div>
-                </section>
-
-                <!-- Languages Section -->
-                <section class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-left" data-aos-delay="200">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-language mr-2 text-sky-500"></i>Languages
-                    </h2>
-                    <ul class="space-y-2 text-slate-700">
-                        <li class="flex justify-between">
-                            <span class="font-medium">Tamil</span>
-                            <span class="text-slate-500">Native</span>
-                        </li>
-                        <li class="flex justify-between">
-                            <span class="font-medium">English</span>
-                            <span class="text-slate-500">Professional</span>
-                        </li>
-                    </ul>
-                </section>
-
-                <!-- Interests Section -->
-                <section class="card-responsive print-shadow-none print-p-0 print-break-inside-avoid print-mb-6" data-aos="fade-left" data-aos-delay="300">
-                    <h2 class="text-2xl font-bold text-slate-800 mb-6 pb-2 border-b-2 border-slate-100 print-border-transparent">
-                        <i class="fas fa-star mr-2 text-sky-500"></i>Interests
-                    </h2>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Robotics & AI</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Autonomous Systems (ROS & SLAM)</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Generative AI</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Machine Learning</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Full Stack Development</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Node.js</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">API Development (Postman)</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Embedded Systems & IoT</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">Cybersecurity & Ethical Hacking</span>
-                        <span class="bg-slate-100 text-slate-700 text-xs font-medium px-2 py-1 rounded">CAD & 3D Modeling</span>
-                    </div>
-                </section>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-20 right-4 md:bottom-6 md:right-6 p-3 rounded-full bg-sky-500 hover:bg-sky-600 text-white shadow-lg transition-all duration-300 opacity-0 print-hidden z-40">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
     <!-- Footer -->
-    <footer class="text-center py-8 text-slate-500 text-sm mt-8 border-t border-slate-200 print-hidden">
-        <p>&copy; <span id="current-year"></span> Puspharaj M. All rights reserved.</p>
+    <footer class="text-center py-10 text-slate-500 text-sm print-hidden">
+        
     </footer>
 
-    <!-- AOS Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <script>
-        // Initialize AOS (Animate On Scroll)
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
-
-        // Set current year in footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-
-        // Loading Screen
-        window.addEventListener('load', function() {
-            const loadingScreen = document.getElementById('loading-screen');
-            loadingScreen.style.opacity = '0';
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
-            }, 500);
-        });
-
-        // Typewriter Effect
-        const typewriterText = "Robotics & AI Engineer | Full-Stack Developer";
-        const typewriterElement = document.getElementById('typewriter-text');
-        let charIndex = 0;
-
-        function typeChar() {
-            if (charIndex < typewriterText.length) {
-                typewriterElement.textContent += typewriterText.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeChar, 75);
-            } else {
-                // Stop blinking cursor after typing is complete
-                const cursor = document.querySelector('.blinking-cursor');
-                if (cursor) {
-                    cursor.style.animation = 'none';
-                    cursor.style.display = 'none';
-                }
-            }
-        }
-
-        // Start typewriter after page is loaded
-        window.onload = function() {
-            setTimeout(typeChar, 1000);
-        };
-
-        // Back to Top Button
-        const backToTopButton = document.getElementById('back-to-top');
-        
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTopButton.classList.remove('opacity-0');
-                backToTopButton.classList.add('opacity-100');
-            } else {
-                backToTopButton.classList.remove('opacity-100');
-                backToTopButton.classList.add('opacity-0');
-            }
-        });
-        
-        backToTopButton.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // Mobile Navigation Active State
-        const navItems = document.querySelectorAll('.nav-item');
-        const sections = document.querySelectorAll('section');
-        
-        window.addEventListener('scroll', function() {
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navItems.forEach(item => {
-                item.classList.remove('active');
-                if (item.getAttribute('href').substring(1) === current) {
-                    item.classList.add('active');
-                }
-            });
-        });
-
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-
-        // PDF download function
         function downloadPDF(button) {
             // Add a loading state to the button
             const originalText = button.innerHTML;
             button.innerHTML = `
-                <i class="fas fa-spinner animate-spin mr-2"></i>
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
                 Processing...
             `;
             button.disabled = true;
@@ -1186,5 +664,6 @@
             });
         }
     </script>
+
 </body>
 </html>
